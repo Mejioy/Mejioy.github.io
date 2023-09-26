@@ -1,0 +1,79 @@
+.head {
+	overflow: hidden;
+	display: flex;
+	padding: 10px;
+	background-color: blue;
+}
+.head-photoplace{
+	display: flex;
+	width: 200px;
+	flex-direction: wrap;
+}
+.head-aboutme{
+	color:white;
+	padding: 20px;
+	display: flex;
+	width: 75%;
+	flex-wrap: wrap;
+}
+
+
+
+.content{
+ overflow: hidden;
+ display: flex;
+ min-height: 100%;
+}
+
+
+/*.leftsite{
+ display: flex;
+ width: 25%;
+ flex-wrap: wrap;
+}
+.leftsite-wrapper{
+ list-style-type: none;
+ display: flex;
+ flex-direction: column;
+}
+*/
+.description{
+    display: flex; 
+    flex-wrap: wrap;
+}
+.description-part{
+ width: 50%;
+ padding: 20px;
+ min-width: 650px;
+ box-sizing: border-box;
+}
+.foot{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width:100%;
+    background-color: #6e6e6e;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+.foot-nav__wrapper{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.foot-nav__item{
+    display: inline-block;
+}
+.foot-nav__item a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+.foot-nav__item:first-child a{
+    padding-left: 0;
+}
+.foot-nav__item a:hover{
+    text-decoration: underline;
+}
