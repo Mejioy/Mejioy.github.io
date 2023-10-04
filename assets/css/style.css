@@ -1,0 +1,179 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+p{
+    margin-top:  10px;
+    margin-bottom: 10px;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+/* Container */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Page */
+.page{
+    width: 100%;
+    margin-top: 3%;
+}
+/* Aboutme */
+.aboutme{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 83vh;
+    
+}
+.aboutme-all{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutme-all-info{
+    width: 50%;
+    padding: 0 2%;
+    align-self: center;
+    flex-direction: column;
+    justify-content:stretch;
+}
+.aboutme-all__photo{
+    width: 50%;
+    padding:  3%;       
+}
+
+.aboutme-all-info__greetings{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.aboutme-all-info__text{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.aboutme__photo{
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Education and skills */
+
+.education-and-skills{
+    display: block;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90vh;
+}
+.education-and-skills-all{
+    width: 100%;
+    display: flex;
+    flex-direction: row;    
+}
+
+.education{
+    justify-content: stretch;
+    padding: 0 2%; 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.education-and-skills__title{
+    margin-bottom: 15px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.education-and-skills__text{
+    line-height: 1.6;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.skills{
+    justify-content: stretch;
+    padding: 0 2%; 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* Navbar */
+.navbar{
+    padding-top: 30px;
+    width:100%;
+    z-index: 1000;
+    color: #333;
+}
+.navbar__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+/* Nav */
+.nav{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    text-decoration: none;
+    transition:color .1s linear;
+    position: relative;
+    
+}
+
+.nav__link::after{
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #ff0000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition:  opacity .1s linear;    
+}
+
+.nav__link:hover{
+    text-decoration: 3px solid ;
+    color: #ff0000;
+}
+.nav__link:hover::after{
+    opacity: 1;
+}
